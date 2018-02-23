@@ -58,6 +58,7 @@
     <Compile Include="ICheckersGameInstance.cs" />
     <Compile Include="ICheckerView.cs" />
     <Compile Include="ILevelData.cs" />
+    <Compile Include="IMoveObserver.cs" />
     <Compile Include="Location.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
