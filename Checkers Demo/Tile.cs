@@ -46,5 +46,15 @@ namespace Checkers_Demo
         {
             return myLocation.GetY();
         }
+
+        public Tile Clone()
+        {
+            Tile aTile = new Tile();
+            aTile.SetInBackRow(isBackRow);
+            aTile.SetIsShaded(isShaded);
+            aTile.SetMyLocation(new Location(GetX(), GetY()));
+            return aTile;
+
+        }
     }
 }
