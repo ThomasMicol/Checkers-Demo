@@ -63,11 +63,21 @@ namespace Checkers_Demo
 
         protected void PlaceCheckers()
         {
+            checkerData = new List<Checker>();
             foreach(Tile aTile in tileData)
             {
-                if(((aTile.GetY() >= (height /2) - 1) || (aTile.GetY() <= (height / 2) - 1)) && aTile.GetIsShaded())
+                if(((aTile.GetY() > (height / 2)) || (aTile.GetY() < (height / 2) - 1)) && aTile.GetIsShaded())
                 {
-                    
+                    Checker aChecker = new Checker();
+                    aChecker.SetMyLocation(new Location(aTile.GetX(), aTile.GetY()));
+                    if(aTile.GetY() > (height / 2)){
+                        aChecker.SetOwingPlayer('S');
+                    }
+                    else
+                    {
+                        aChecker.SetOwingPlayer('N');
+                    }
+                    checkerData.Add(aChecker);
                 }
             }
         }
