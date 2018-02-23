@@ -10,11 +10,22 @@ using System.Windows.Forms;
 
 namespace Checkers_Demo
 {
-    public partial class Form1 : Form
+    public partial class Form1 : Form, ICheckerView
     {
+      
         public Form1()
         {
             InitializeComponent();
+        }
+
+        public void DrawGameLevel(ILevelData levelData)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void DrawMainMenu()
+        {
+            throw new NotImplementedException();
         }
     }
 }

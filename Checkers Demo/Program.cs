@@ -16,7 +16,10 @@ namespace Checkers_Demo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Form1 myView = new Form1();
+            CheckersController myCtrl = new CheckersController(myView);
             Application.Run(new Form1());
+
         }
     }
 }
