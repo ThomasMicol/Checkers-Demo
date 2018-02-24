@@ -12,6 +12,7 @@ namespace Checkers_Demo
         protected int width = 8;
         protected List<Tile> tileData;
         protected List<Checker> checkerData;
+        protected char currentTurn;
         
 
         public CheckerBoard()
@@ -31,6 +32,7 @@ namespace Checkers_Demo
 
         public void ResetBoard()
         {
+            currentTurn = 'S';
             tileData = new List<Tile>();
             for(int x = 0; x < width; x++)
             {

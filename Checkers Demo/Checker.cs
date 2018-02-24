@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Checkers_Demo
 {
-    class Checker
+    public class Checker : IChecker
     {
         protected char owningPlayer;
         protected bool isCapped = false;
@@ -25,6 +25,11 @@ namespace Checkers_Demo
         public void SetIsCapped()
         {
             isCapped = true;
+        }
+
+        public Location GetLocation()
+        {
+            return myLocation;
         }
     }
 }

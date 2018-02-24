@@ -8,7 +8,7 @@ namespace Checkers_Demo
 {
     interface IMoveObserver
     {
-        List<IMove> GetPossibleMoves(ILevelData levelData);
-        bool IsMovePossible(IMove aMove);
+        List<IMoveContainer> GetPossibleMoves(ILevelData levelData);
+        bool IsMovePossible(IMoveContainer aMove);
     }
 }
