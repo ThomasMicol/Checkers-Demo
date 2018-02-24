@@ -24,8 +24,8 @@ namespace Checkers_Demo
             throw new NotImplementedException();
         }
 
-        protected bool checkForDuplicates(IMove targetMove)
-        {
+        protected bool CheckForDuplicates(IMove targetMove)
+        { 
             foreach(IMove aMove in possibleMoves)
             {
                 if (aMove.Equals(targetMove))

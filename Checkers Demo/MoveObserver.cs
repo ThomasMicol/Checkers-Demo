@@ -8,7 +8,7 @@ namespace Checkers_Demo
 {
     class MoveObserver : IMoveObserver
     {
-        public List<IMoveContainer> GetPossibleMoves(ILevelData levelData)
+        public IMoveContainer GetPossibleMoves(ILevelData levelData)
         {
             IMoveContainer possibleMoves = new MoveContainer();
 
