@@ -16,12 +16,29 @@ namespace Checkers_Demo
 
         public void AddMove(IChecker aChecker, Directions aDir)
         {
-            throw new NotImplementedException();
+            IMove aMove = new Move(aChecker, aDir);
+            if (CheckForDuplicates(aMove))
+            {
+                System.Console.WriteLine("This move already exists in the possible moves array. File MOveCOntainer.cs, Line 22");
+
+            }
+            else
+            {
+                possibleMoves.Add(aMove);
+            }
+            
         }
 
         public void RemoveMove(IChecker aChecker, Directions aDir)
         {
-            throw new NotImplementedException();
+            foreach(IMove aMove in possibleMoves)
+            {
+                if (aMove.GetChecker().Equals(aChecker) && aMove.GetDirections() == aDir)
+                {
+                    possibleMoves.Remove(aMove);
+                    break;
+                }
+            }
         }
 
         protected bool CheckForDuplicates(IMove targetMove)

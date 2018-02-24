@@ -8,6 +8,8 @@ namespace Checkers_Demo
 {
     interface IMove
     {
-
+        Location GetLocation();
+        IChecker GetChecker();
+        Directions GetDirections();
     }
 }

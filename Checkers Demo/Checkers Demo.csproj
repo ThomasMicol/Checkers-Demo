@@ -63,6 +63,7 @@
     <Compile Include="IMoveContainer.cs" />
     <Compile Include="IMoveObserver.cs" />
     <Compile Include="Location.cs" />
+    <Compile Include="Move.cs" />
     <Compile Include="MoveContainer.cs" />
     <Compile Include="MoveObserver.cs" />
     <Compile Include="Program.cs" />
