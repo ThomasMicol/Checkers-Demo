@@ -12,9 +12,9 @@ namespace Checkers_Demo
         protected bool isCapped = false;
         protected Location myLocation;
 
-        public void SetMyLocation(Location aLocation)
+        public void Move(Directions aDir)
         {
-            myLocation = aLocation;
+
         }
 
         public void SetOwingPlayer(char boardSide)

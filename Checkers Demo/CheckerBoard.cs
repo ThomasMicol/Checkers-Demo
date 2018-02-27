@@ -18,14 +18,10 @@ namespace Checkers_Demo
         public CheckerBoard()
         {
             ResetBoard();
+
         }
 
         public ILevelData GetLevelData()
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool Move(Directions aDir)
         {
             throw new NotImplementedException();
         }

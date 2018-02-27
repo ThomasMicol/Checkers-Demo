@@ -8,7 +8,6 @@ namespace Checkers_Demo
 {
     public interface ICheckersGameInstance
     {
-        Boolean Move(Directions aDir);
         ILevelData GetLevelData();
         void ResetBoard();
         

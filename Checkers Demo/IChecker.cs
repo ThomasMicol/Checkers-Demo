@@ -12,5 +12,6 @@ namespace Checkers_Demo
         void SetOwingPlayer(char boardSide);
         void SetIsCapped();
         Location GetLocation();
+        void Move(Directions aDir);
     }
 }
