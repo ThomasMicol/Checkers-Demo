@@ -8,6 +8,7 @@ namespace Checkers_Demo
 {
     public interface ICheckersGameInstance
     {
+
         ILevelData GetLevelData();
         void ResetBoard();
         

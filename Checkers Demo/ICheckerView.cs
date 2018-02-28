@@ -10,5 +10,7 @@ namespace Checkers_Demo
     {
         void DrawMainMenu();
         void DrawGameLevel(ILevelData levelData);
+        void GameWon(char whomWon);
+        void Message<T>(T aString);
     }
 }

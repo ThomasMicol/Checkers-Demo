@@ -12,7 +12,7 @@ namespace Checkers_Demo
         protected bool isCapped = false;
         protected Location myLocation;
 
-        public void Move(Directions aDir)
+        public bool Move(Directions aDir)
         {
 
         }
@@ -30,6 +30,11 @@ namespace Checkers_Demo
         public Location GetLocation()
         {
             return myLocation;
+        }
+
+        public void SetMyLocation(Location aLocation)
+        {
+            myLocation = aLocation;
         }
     }
 }

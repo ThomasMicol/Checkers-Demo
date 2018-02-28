@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Checkers_Demo
 {
-    class MoveObserver : IMoveObserver
+    public class MoveObserver : IMoveObserver
     {
         public IMoveContainer GetPossibleMoves(ILevelData levelData)
         {
